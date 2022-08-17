@@ -49,8 +49,8 @@ modelhub = hub.import_module(
     repo_info='asthestarsfalll/SENet-MegEngine:main', git_host='github.com')
 
 # load SENet and custom on you own
-model = modelhub.SENet(block=SEBottleneck, layers=[3, 8, 36, 3], groups=64, reduction=16,
-	downsample_kernel_size=3, downsample_padding=1,  inplanes=128, input_3x3=True)
+model = modelhub.SENet(block=modelhub.SEBottleneck, layers=[3, 8, 36, 3], groups=64, reduction=16,
+                       downsample_kernel_size=3, downsample_padding=1,  inplanes=128, input_3x3=True)
 
 # load pretrained model
 pretrained_model = modelhub.senet154(pretrained=True)
