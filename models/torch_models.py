@@ -1,0 +1,9 @@
+from timm.models.senet import legacy_seresnet18 as torch_seresnet18
+from timm.models.senet import legacy_seresnet34 as torch_seresnet34
+from timm.models.senet import legacy_seresnet50 as torch_seresnet50
+from timm.models.senet import legacy_seresnet101 as torch_seresnet101
+from timm.models.senet import legacy_seresnet152 as torch_seresnet152
+from timm.models.senet import legacy_senet154 as torch_senet154
+from timm.models.senet import legacy_seresnext26_32x4d as torch_seresnext26_32x4d
+from timm.models.senet import legacy_seresnext50_32x4d as torch_seresnext50_32x4d
+from timm.models.senet import legacy_seresnext101_32x4d as torch_seresnext101_32x4d
